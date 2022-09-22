@@ -28,7 +28,7 @@ header {
 
 .logo {
   padding: 5px;
-  width: 60%;
+  width: 80%;
   height: 75px;
   object-fit: scale-down;
 }
@@ -456,13 +456,16 @@ button {
   .imgperso {
     object-fit: cover;
   }
+  .utilisateur {
+    width: 5%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
 
 .img {
   height: 60vh;
-  object-fit: cover center;
+  object-fit: cover;
 }
 
   .btn {
@@ -505,5 +508,5 @@ button {
   .film{
     width: 30%;
   }
-
+  
 }
