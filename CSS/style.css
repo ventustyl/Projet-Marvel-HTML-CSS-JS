@@ -297,11 +297,14 @@ footer ul li a:hover {
 .film {
   margin: auto;
   text-align: center;
+object-fit: contain;
 }
 
 .imgfilm, .imgperso {
   width: 90%;
   margin: 20px auto 0;
+  object-fit: contain;
+
  }
 .imgperso {
   object-fit: fill;
