@@ -1,5 +1,3 @@
-
-
 * {
   background: black;
   margin: 0;
@@ -32,11 +30,15 @@ justify-content: flex-end;
   padding: 5px;
   width: 60%;
   height: 75px;
-  object-fit: contain;
+  object-fit: scale-down;
+}
+
+.section {
+  width: 100%;
 }
 .img {
     margin-top: 20px;
-    object-fit: scale-down;
+object-fit: contain;
     width: 100%;
 
 }
@@ -90,6 +92,11 @@ ul.open {
 ul li {
   padding: 10px 0;
   text-align: center;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: red;
 }
 
 h1 {
@@ -114,8 +121,17 @@ margin: auto;
 text-align: center;
   }
 .btn {
-  width: 100%;
+  margin-top: -20px;
+  width: 70%;
+  animation: fleche 2s infinite ease-in-out;
 }
+
+@keyframes fleche {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(20px);}
+  100% {transform: translateY(0px);}
+}
+
 hr {
   margin-top: 30px;
   width: 100%;
@@ -178,13 +194,14 @@ h3 {
 }
 
 .liste {
-  font-size: 13px;
+  font-size: 0.8rem;
   line-height: 16px;
   padding-top: 50px;
   text-align: left;
   width:100%;
   background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url('../IMG/avengers.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   white-space:pre-wrap;
   animation: showup .5s;
 }
@@ -196,7 +213,8 @@ h3 {
   text-align: left;
   width:100%;
   background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url("../IMG/avengers.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   white-space:pre-wrap;
   animation: showup .5s;
 
@@ -244,7 +262,11 @@ footer ul li {
   text-align: left;
   background: #212121;
   line-height: 3px;
+  cursor: pointer;
+}
 
+footer ul li:hover {
+  color:
 }
 
 .sociaux {
@@ -258,4 +280,8 @@ footer ul li {
   margin: 20px auto;
   width: 50px;
   filter: grayscale(1);
+}
+
+.icoSociaux:hover {
+  filter: grayscale(0);
 }
