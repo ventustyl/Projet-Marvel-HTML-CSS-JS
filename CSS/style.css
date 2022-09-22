@@ -254,13 +254,8 @@ h3 {
 }
 
 @keyframes showup {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .none {
@@ -509,6 +504,12 @@ h3 {
 
   .film{
     width: 30%;
+  }
+  .select_box {
+    color: red;
+    appearance: none;
+    overflow: hidden;
+    background: url("../IMG/fleche.png") 95% / 2% no-repeat black;
   }
   
 }
