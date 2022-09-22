@@ -217,7 +217,7 @@ h3 {
 }
 
 .liste {
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 16px;
   padding-top: 50px;
   text-align: left;
@@ -236,7 +236,7 @@ h3 {
 
 .liste2 {
   display: none;
-  font-size: 13px;
+  font-size: 0.8em;
   line-height: 16px;
   padding-top: 50px;
   text-align: left;
@@ -476,9 +476,11 @@ button {
     text-align: center;
     columns: 2;
     background-position: center;
-    background-attachment: fixed;
-  }
 
+  }
+h3 {
+  font-size: 30px;
+}
   footer ul {
     display: flex;
     align-items: center;
