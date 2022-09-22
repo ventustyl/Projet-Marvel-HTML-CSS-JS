@@ -1,0 +1,261 @@
+
+
+* {
+  background: black;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+	font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+
+div{
+    margin: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 75px;
+  }
+
+.navhaut {
+width: 20%;
+display: flex;
+justify-content: flex-end;
+  }
+
+.logo {
+  padding: 5px;
+  width: 60%;
+  height: 75px;
+  object-fit: contain;
+}
+.img {
+    margin-top: 20px;
+    object-fit: scale-down;
+    width: 100%;
+
+}
+.logoImg {
+    height: 70px;
+    object-fit: scale-down;
+}
+
+/* --Burger menu */
+#burger {
+  width: 25px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+  position: relative;
+  margin: 15px;
+}
+#burger::before,
+#burger::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+  position: absolute;
+  transform-origin: center;
+  transition: all 1s ease;
+}
+#burger::before {
+  top: -7px;
+}
+#burger::after {
+  top: 7px;
+}
+
+
+.ulhaut {
+  background: black;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 75px;
+  padding: 0 0;
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: all 0.3s ease;
+}
+ul.open {
+  transform: scaleY(1);
+}
+ul li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+    text-align: center;
+    margin: 30px auto;
+    width: 70%;
+}
+#titre{
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+#titre::first-letter {
+    color: red;
+    font-size: 110%;
+  }
+
+.bouton {
+width: 15%;
+margin: auto;
+text-align: center;
+  }
+.btn {
+  width: 100%;
+}
+hr {
+  margin-top: 30px;
+  width: 100%;
+  mix-blend-mode: hard-light;
+border: 2px solid #FFFFFF;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  padding-top: 20px;
+  width: 80%;
+  color: red;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+margin: auto;
+}
+
+.ordre {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+h3 {
+  font-size: 18px;
+}
+.checkbox {
+  display: none;
+}
+.label {
+  display: inline-block;
+  height: 30px;
+  width: 70px;
+  background: white;
+  position: relative;
+  border-radius: 100px;
+  box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.541) inset;
+}
+.label::after {
+  content: '';
+  height: 15px;
+  width: 15px;
+  background: rgb(235, 235, 235);
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  transition: all .5s;
+  border-radius: 50px;
+  box-shadow: 3px 1px 2px 2px rgba(0, 0, 0, 0.541) ;
+}
+
+.checkbox:checked + label::after {
+  transform: translateX(35px);
+}
+
+.liste {
+  font-size: 13px;
+  line-height: 16px;
+  padding-top: 50px;
+  text-align: left;
+  width:100%;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url("/HTML/IMG/avengers.png");
+  background-size: cover;
+  white-space:pre-wrap;
+  animation: showup .5s;
+}
+.liste2 {
+  display: none;
+  font-size: 13px;
+  line-height: 16px;
+  padding-top: 50px;
+  text-align: left;
+  width:100%;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url("/HTML/IMG/avengers.png");
+  background-size: cover;
+  white-space:pre-wrap;
+  animation: showup .5s;
+
+}
+@keyframes showup {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+.none{
+  display: none;
+}
+.bloc{
+  display: block;
+}
+
+footer {
+  background: #212121;
+  position: relative;
+}
+
+.wolverine {
+  width: 50%;
+  position: absolute;
+    right: 0%;
+bottom: 50%;
+  background: #212121;
+
+}
+
+.imgfooter {
+  margin: 10px;
+  width: 50%;
+}
+
+.navbas {
+  text-align: left;
+  background: #212121;
+}
+footer ul {
+  background: #212121;
+}
+
+footer ul li {
+  color: red;
+  text-align: left;
+  background: #212121;
+  line-height: 3px;
+
+}
+
+.sociaux {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #212121;
+}
+.icoSociaux {
+  background: #212121;
+  margin: 20px auto;
+  width: 50px;
+  filter: grayscale(1);
+}
