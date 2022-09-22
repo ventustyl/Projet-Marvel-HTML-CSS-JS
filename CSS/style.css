@@ -89,13 +89,20 @@ object-fit: contain;
 ul.open {
   transform: scaleY(1);
 }
-ul li {
+ul li{
   padding: 10px 0;
   text-align: center;
+
+}
+
+ul li a{
+
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
 }
 
-ul li:hover {
+ul li a:hover {
   color: red;
 }
 
@@ -253,11 +260,13 @@ bottom: 50%;
   text-align: left;
   background: #212121;
 }
-footer ul {
+footer ul a, footer ul, footer ul li {
   background: #212121;
+  text-align: left;
+  color: red;
 }
 
-footer ul li {
+footer ul li a{
   color: red;
   text-align: left;
   background: #212121;
@@ -265,8 +274,8 @@ footer ul li {
   cursor: pointer;
 }
 
-footer ul li:hover {
-  color:
+footer ul li a:hover {
+  color: white
 }
 
 .sociaux {
@@ -284,4 +293,33 @@ footer ul li:hover {
 
 .icoSociaux:hover {
   filter: grayscale(0);
+}
+.film {
+  margin: auto;
+  text-align: center;
+}
+
+.imgfilm, .imgperso {
+  width: 90%;
+  margin: 20px auto 0;
+ }
+.imgperso {
+  object-fit: fill;
+}
+ .film h2 {
+  color: white;
+  text-align: left;
+  margin-bottom: 5px;
+ }
+
+ .film p {
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  font-size: 16px;
+  white-space:pre-wrap;
+ }
+
+h3 {
+  margin: 5px auto;
 }
