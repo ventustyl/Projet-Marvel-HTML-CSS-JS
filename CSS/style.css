@@ -11,6 +11,7 @@
 div {
   margin: auto;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -35,11 +36,13 @@ header {
 .section {
   width: 100%;
 }
+
 .img {
   margin-top: 20px;
   object-fit: contain;
   width: 100%;
 }
+
 .logoImg {
   height: 70px;
   object-fit: scale-down;
@@ -54,6 +57,7 @@ header {
   position: relative;
   margin: 15px;
 }
+
 #burger::before,
 #burger::after {
   content: "";
@@ -65,9 +69,11 @@ header {
   transform-origin: center;
   transition: all 1s ease;
 }
+
 #burger::before {
   top: -7px;
 }
+
 #burger::after {
   top: 7px;
 }
@@ -83,9 +89,11 @@ header {
   transform-origin: center top;
   transition: all 0.3s ease;
 }
+
 ul.open {
   transform: scaleY(1);
 }
+
 ul li {
   padding: 10px 0;
   text-align: center;
@@ -107,11 +115,13 @@ h1 {
   margin: 30px auto;
   width: 70%;
 }
+
 #titre {
   text-align: center;
   display: block;
   font-size: 30px;
 }
+
 #titre::first-letter {
   color: red;
   font-size: 110%;
@@ -122,6 +132,7 @@ h1 {
   margin: auto;
   text-align: center;
 }
+
 .btn {
   margin-top: -20px;
   width: 70%;
@@ -132,9 +143,11 @@ h1 {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -171,9 +184,11 @@ h2 {
 h3 {
   font-size: 18px;
 }
+
 .checkbox {
   display: none;
 }
+
 .label {
   display: inline-block;
   height: 30px;
@@ -183,6 +198,7 @@ h3 {
   border-radius: 100px;
   box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.541) inset;
 }
+
 .label::after {
   content: "";
   height: 15px;
@@ -196,7 +212,7 @@ h3 {
   box-shadow: 3px 1px 2px 2px rgba(0, 0, 0, 0.541);
 }
 
-.checkbox:checked + label::after {
+.checkbox:checked+label::after {
   transform: translateX(35px);
 }
 
@@ -206,19 +222,18 @@ h3 {
   padding-top: 50px;
   text-align: left;
   width: 100%;
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.7) 18%,
       rgba(0, 0, 0, 0.7) 82%,
-      rgba(0, 0, 0, 0.7959558823529411) 100%
-    ),
+      rgba(0, 0, 0, 0.7959558823529411) 100%),
     url("../IMG/avengers.png");
   background-size: contain;
   background-repeat: no-repeat;
   white-space: pre-wrap;
   animation: showup 0.5s;
 }
+
 .liste2 {
   display: none;
   font-size: 13px;
@@ -226,30 +241,32 @@ h3 {
   padding-top: 50px;
   text-align: left;
   width: 100%;
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.7) 18%,
       rgba(0, 0, 0, 0.7) 82%,
-      rgba(0, 0, 0, 0.7959558823529411) 100%
-    ),
+      rgba(0, 0, 0, 0.7959558823529411) 100%),
     url("../IMG/avengers.png");
   background-size: contain;
   background-repeat: no-repeat;
   white-space: pre-wrap;
   animation: showup 0.5s;
 }
+
 @keyframes showup {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .none {
   display: none;
 }
+
 .bloc {
   display: block;
 }
@@ -276,6 +293,7 @@ footer {
   text-align: left;
   background: #212121;
 }
+
 footer ul a,
 footer ul,
 footer ul li {
@@ -302,6 +320,7 @@ footer ul li a:hover {
   align-items: center;
   background: #212121;
 }
+
 .icoSociaux {
   background: #212121;
   margin: 20px auto;
@@ -312,6 +331,7 @@ footer ul li a:hover {
 .icoSociaux:hover {
   filter: grayscale(0);
 }
+
 .film {
   margin: auto;
   text-align: center;
@@ -324,9 +344,11 @@ footer ul li a:hover {
   margin: 20px auto 0;
   object-fit: contain;
 }
+
 .imgperso {
   object-fit: fill;
 }
+
 .film h2 {
   color: white;
   text-align: left;
@@ -351,6 +373,7 @@ h4 {
   text-align: center;
   font-size: 20px;
 }
+
 .bloc-commentaire {
   display: flex;
   flex-direction: column;
@@ -366,6 +389,7 @@ select {
   padding: 10px;
   font-size: 18px;
 }
+
 label {
   text-align: left;
   color: red;
@@ -382,6 +406,7 @@ button {
   color: white;
   margin: 20px auto;
 }
+
 .login {
   display: flex;
   width: 80%;
@@ -392,6 +417,7 @@ button {
 .utilisateur {
   width: 20%;
 }
+
 .login p {
   margin-left: 10px;
 }
@@ -400,31 +426,84 @@ button {
   width: 80%;
   margin: 0 auto 20px;
 }
+
 .select_box {
-color: red;
-appearance: none;
-overflow: hidden;
-background: url("../IMG/fleche.png") 90% / 5% no-repeat black;
+  color: red;
+  appearance: none;
+  overflow: hidden;
+  background: url("../IMG/fleche.png") 90% / 5% no-repeat black;
+}
+
+@media only screen and (min-width: 700px) {
+
+  .liste,
+  .liste2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
 
-  @media only screen and (min-width: 700px) {
-
-    .liste, .liste2{
-      font-size: 1.5em;
-      line-height: 1.5em;
-    }
-    .sectionFS {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      flex-wrap: wrap;
-     }
-     
-     .film {
-       width:50%;
-     }
-     .imgperso {
-      
-      object-fit: cover;
-     }
+  .sectionFS {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
+  .film {
+    width: 50%;
+  }
+
+  .imgperso {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+.img {
+  height: 60vh;
+  object-fit: cover center;
+}
+
+  .btn {
+    width: 20%;
+  }
+  .liste,
+  .liste2 {
+    text-align: center;
+    columns: 2;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    list-style-type: none;
+  }
+
+  .wolverine {
+    width: 30%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background: #212121;
+  }
+
+  .imgfooter {
+    margin: 10px;
+    width: 20%;
+  }
+  .sociaux {
+    margin: 0;
+    justify-content: start;
+    width: 70%;
+  }
+
+  .film{
+    width: 30%;
+  }
+
+}
