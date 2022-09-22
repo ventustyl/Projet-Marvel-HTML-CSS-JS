@@ -409,7 +409,7 @@ background: url("../IMG/fleche.png") 90% / 5% no-repeat black;
 
   @media only screen and (min-width: 700px) {
 
-    .liste{
+    .liste, .liste2{
       font-size: 1.5em;
       line-height: 1.5em;
     }
