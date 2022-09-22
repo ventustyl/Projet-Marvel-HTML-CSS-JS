@@ -183,7 +183,7 @@ h3 {
   padding-top: 50px;
   text-align: left;
   width:100%;
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url("/HTML/IMG/avengers.png");
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url('../IMG/avengers.png');
   background-size: cover;
   white-space:pre-wrap;
   animation: showup .5s;
@@ -195,7 +195,7 @@ h3 {
   padding-top: 50px;
   text-align: left;
   width:100%;
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url("/HTML/IMG/avengers.png");
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.7959558823529411) 100%), url("../IMG/avengers.png");
   background-size: cover;
   white-space:pre-wrap;
   animation: showup .5s;
