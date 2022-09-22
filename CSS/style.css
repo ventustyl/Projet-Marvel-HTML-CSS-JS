@@ -5,6 +5,7 @@
   color: white;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  font-size: 100%
 }
 
 div {
@@ -200,7 +201,7 @@ h3 {
 }
 
 .liste {
-  font-size: 0.8rem;
+  font-size: 0.9em;
   line-height: 16px;
   padding-top: 50px;
   text-align: left;
@@ -406,3 +407,24 @@ overflow: hidden;
 background: url("../IMG/fleche.png") 90% / 5% no-repeat black;
   }
 
+  @media only screen and (min-width: 700px) {
+
+    .liste{
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+    .sectionFS {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+     }
+     
+     .film {
+       width:50%;
+     }
+     .imgperso {
+      
+      object-fit: cover;
+     }
+  }
