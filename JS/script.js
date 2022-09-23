@@ -1,3 +1,4 @@
+
 /* Sélection des éléments HTML */
 let link = document.getElementById('link')
 let burger = document.getElementById('burger')
@@ -21,3 +22,16 @@ btn.addEventListener('click', function() {
   ordre.classList.toggle('bloc')
 })
 
+
+gsap.from("#widow",{
+  scrollTrigger : {
+      scrub: true
+  },
+  x:300,duration: 5
+})
+gsap.from("#iron",{
+  scrollTrigger : {
+      scrub: true
+  },
+  y: +250, duration: 1
+})

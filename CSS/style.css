@@ -1,5 +1,4 @@
 * {
-  background: black;
   margin: 0;
   box-sizing: border-box;
   color: white;
@@ -7,6 +6,10 @@
   scroll-behavior: smooth;
   font-size: 100%;
 }
+body {
+  background: black;
+}
+
 
 div {
   margin: auto;
@@ -130,6 +133,21 @@ h1 {
   color: red;
   font-size: 110%;
 }
+
+
+
+
+.section .marvel { 
+display: none;
+
+}
+
+#widow {  
+left: 20%;
+}
+
+
+
 
 .bouton {
   width: 15%;
@@ -491,6 +509,28 @@ footer ul li::first-letter {
 }
 
 @media only screen and (min-width: 1000px) {
+
+  .section .marvel { 
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    pointer-events: none;
+  
+}
+
+#widow {  
+  left: 0%;
+}
+
+#iron {
+  top: 20px;
+  left: 10%;
+}
+  
+  
+  
   .img {
     height: 68vh;
     object-fit: cover;
