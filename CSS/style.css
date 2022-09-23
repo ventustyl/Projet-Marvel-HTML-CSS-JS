@@ -5,7 +5,7 @@
   color: white;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  font-size: 100%
+  font-size: 100%;
 }
 
 div {
@@ -105,6 +105,10 @@ ul li a {
   cursor: pointer;
 }
 
+ul li::first-letter {
+  color: red;
+}
+
 ul li a:hover {
   color: red;
 }
@@ -164,11 +168,14 @@ hr {
 h2 {
   padding-top: 20px;
   width: 80%;
-  color: red;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 29px;
   text-align: center;
   margin: auto;
+}
+
+h2::first-letter {
+  color: red;
 }
 
 .ordre {
@@ -183,6 +190,9 @@ h2 {
 
 h3 {
   font-size: 18px;
+}
+h3::first-letter {
+  color: red;
 }
 
 .checkbox {
@@ -212,7 +222,7 @@ h3 {
   box-shadow: 3px 1px 2px 2px rgba(0, 0, 0, 0.541);
 }
 
-.checkbox:checked+label::after {
+.checkbox:checked + label::after {
   transform: translateX(35px);
 }
 
@@ -222,11 +232,13 @@ h3 {
   padding-top: 50px;
   text-align: left;
   width: 100%;
-  background-image: linear-gradient(90deg,
+  background-image: linear-gradient(
+      90deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.7) 18%,
       rgba(0, 0, 0, 0.7) 82%,
-      rgba(0, 0, 0, 0.7959558823529411) 100%),
+      rgba(0, 0, 0, 0.7959558823529411) 100%
+    ),
     url("../IMG/avengers.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -241,11 +253,13 @@ h3 {
   padding-top: 50px;
   text-align: left;
   width: 100%;
-  background-image: linear-gradient(90deg,
+  background-image: linear-gradient(
+      90deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.7) 18%,
       rgba(0, 0, 0, 0.7) 82%,
-      rgba(0, 0, 0, 0.7959558823529411) 100%),
+      rgba(0, 0, 0, 0.7959558823529411) 100%
+    ),
     url("../IMG/avengers.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -254,8 +268,12 @@ h3 {
 }
 
 @keyframes showup {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .none {
@@ -295,6 +313,7 @@ footer ul li {
   background: #212121;
   text-align: left;
   color: red;
+  list-style-type: none;
 }
 
 footer ul li a {
@@ -364,12 +383,18 @@ h3 {
 
 h4 {
   margin-top: 15px;
-  color: red;
+  color: white;
   text-align: center;
   font-size: 20px;
 }
 
-.bloc-commentaire {
+h4::first-letter {
+  color: red;
+}
+
+.bloc-commentaire,
+.bloc-connexion,
+.bloc-inscription {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -383,15 +408,18 @@ select {
   border-radius: 30px;
   padding: 10px;
   font-size: 18px;
+  color: white;
 }
 
 label {
   text-align: left;
-  color: red;
+
   margin: 20px;
   font-size: 20px;
 }
-
+label::first-letter {
+  color: red;
+}
 button {
   border-radius: 30px;
   width: 80%;
@@ -423,14 +451,20 @@ button {
 }
 
 .select_box {
-  color: red;
+  color: white;
   appearance: none;
   overflow: hidden;
   background: url("../IMG/fleche.png") 90% / 5% no-repeat black;
 }
 
-@media only screen and (min-width: 700px) {
+footer ul li a {
+  color: white;
+}
+footer ul li::first-letter {
+  color: red;
+}
 
+@media only screen and (min-width: 700px) {
   .liste,
   .liste2 {
     font-size: 1.5em;
@@ -457,11 +491,10 @@ button {
 }
 
 @media only screen and (min-width: 1000px) {
-
-.img {
-  height: 68vh;
-  object-fit: cover;
-}
+  .img {
+    height: 68vh;
+    object-fit: cover;
+  }
 
   .btn {
     width: 20%;
@@ -471,11 +504,10 @@ button {
     text-align: center;
     columns: 2;
     background-position: center;
-
   }
-h3 {
-  font-size: 30px;
-}
+  h3 {
+    font-size: 30px;
+  }
   footer ul {
     display: flex;
     align-items: center;
@@ -502,14 +534,25 @@ h3 {
     width: 70%;
   }
 
-  .film{
+  .film {
     width: 30%;
   }
   .select_box {
     color: red;
     appearance: none;
     overflow: hidden;
-    background: url("../IMG/fleche.png") 95% / 2% no-repeat black;
+    background: url("../IMG/fleche.png") 95% / 4% no-repeat black;
   }
-  
+  .bloc-commentaire,
+  .bloc-connexion,
+  .bloc-inscription {
+margin: 0 auto;
+    width: 35%;
+
+  }
+
+  .connexion {
+    display: flex;
+    align-items: flex-start;
+  }
 }
