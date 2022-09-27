@@ -548,6 +548,10 @@ footer ul li::first-letter {
   h3 {
     font-size: 30px;
   }
+footer{
+  display: flex;
+}
+
   footer ul {
     display: flex;
     align-items: center;
@@ -557,11 +561,7 @@ footer ul li::first-letter {
   }
 
   .wolverine {
-    width: 30%;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-    background: #212121;
+display: none;
   }
 
   .imgfooter {
@@ -571,7 +571,11 @@ footer ul li::first-letter {
   .sociaux {
     margin: 0;
     justify-content: start;
-    width: 70%;
+    width: 25%;
+  }
+
+  .icoSociaux {
+    width: 5%;
   }
 
   .film {
